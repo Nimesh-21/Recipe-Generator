@@ -1,5 +1,7 @@
-Install Bolt IoT Library
-pip install boltiotai
+1.) Install Bolt IoT Library
 
-Add the following line in your code:
-from boltiotai import openai
+  pip install boltiotai
+
+2.) Add the following line in your code:
+
+  from boltiotai import openai

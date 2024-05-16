@@ -2,8 +2,12 @@ from boltiotai import openai
 import os
 import sys
 from flask import Flask, render_template_string, request  
+from dotenv import load_dotenv
+
+load_dotenv()
+
 try:
-  openai.api_key = os.environ['OPENAI_API_KEY']
+  openai.api_key = os.getenv("OPENAI_API_KEY")
 except KeyError:
   sys.stderr.write("""
   You haven't set up your API key yet.
